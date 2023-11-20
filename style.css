@@ -1,0 +1,157 @@
+:root {
+  --color-box: rgba(104, 86, 86, 0.6);
+  --color-p-box: #ffffff;
+}
+body {
+  margin: 0;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: row;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  background: #ff0000;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  min-height: 2000px;
+  grid:
+    "aside header" 200px
+    "aside main" 1fr
+    / 350px auto;
+}
+
+header {
+  grid-area: header;
+  background: linear-gradient(140deg, #ffffff, #ff0000);
+}
+header img {
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  height: 200px;
+  width: 400px;
+}
+main {
+  grid-area: main;
+  background: url(/img/prairie.jpg);
+  background-size: cover;
+  display: grid;
+  grid:
+    "item1 item2 item3" 1fr
+    "item4 item5 item6" 1fr
+    /1fr 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+
+.item-1 {
+  grid-area: item1;
+  background-color: var(--color-box);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  color: var(--color-p-box);
+}
+div h2 {
+  text-decoration: underline;
+}
+.matin {
+  display: grid;
+  grid:
+    "titre titre"
+    "nom1 nom2"
+    "nom3 nom4";
+}
+.matin h2 {
+  grid-area: titre;
+}
+.aprem {
+  display: grid;
+  grid:
+    "titre titre"
+    "nom1 nom2"
+    "nom3 nom4";
+}
+.aprem h2 {
+  grid-area: titre;
+}
+.matin h2 {
+  grid-area: titre;
+}
+.aprem p {
+  font-size: 40px;
+}
+.matin p {
+  font-size: 40px;
+}
+.item-2 {
+  grid-area: item2;
+  background-color: var(--color-box);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  color: var(--color-p-box);
+}
+
+.item-3 {
+  grid-area: item3;
+  background-color: var(--color-box);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  color: var(--color-p-box);
+}
+.item-4 {
+  grid-area: item4;
+  background-color: var(--color-box);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  color: var(--color-p-box);
+}
+.item-5 {
+  grid-area: item5;
+  background-color: var(--color-box);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  color: var(--color-p-box);
+}
+.item-6 {
+  grid-area: item6;
+  background-color: var(--color-box);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 0px;
+  color: var(--color-p-box);
+}
+aside {
+  grid-area: aside;
+  background: linear-gradient(180deg, #ffffff, #ff0000);
+}
+
+/*       aside     */
+
+.image img {
+  height: 300px;
+}
+
+aside h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+}
+aside h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+aside p {
+  font-size: 30px;
+  text-align: center;
+}
